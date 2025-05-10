@@ -71,11 +71,11 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="h-screen flex items-center justify-center text-center pt-20 bg-gradient-to-br from-secondary via-neutral to-primary bg-noise" id="home">
+  <section class="h-screen flex items-center justify-center text-center pt-20 bg-gradient-to-b from-secondary via-neutral to-primary bg-noise" id="home">
     <div data-aos="fade-up">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary drop-shadow-glow animate-fadeIn">Selamat Datang di IT's Day 2025</h2>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-secondary drop-shadow-glow animate-fadeIn">Selamat Datang di IT's Day 2025</h2>
       <p class="mb-6 text-secondary/80 animate-slideUp">Workshop • Lomba • Sertifikasi • IT Exhibition</p>
-      <a href="https://forms.gle/contohFormPendaftaran" target="_blank"
+      <a href="https://forms.gle/contohFormPendaftaran" target="_blank" 
         class="bg-secondary text-primary px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 animate-slideUp">
         Daftar Sekarang
       </a>
@@ -134,22 +134,63 @@
   <section id="jadwal" class="py-24 bg-secondary text-primary bg-noise" data-aos="fade-up">
     <div class="max-w-7xl mx-auto px-4">
       <h3 class="text-3xl font-semibold text-center mb-12 drop-shadow-glow">Jadwal Kegiatan</h3>
-    <div class="overflow-hidden relative">
-    <div id="carousel" class="flex transition-transform duration-700 ease-in-out w-[500%]">
-    ${[1,2,3,4,5].map(i => `
-      <a href="event${i}.html" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 shrink-0 px-2 group bg-white p-6 rounded-2xl border border-neutral transition hover:scale-105 shadow-lg flex flex-col items-center">
-        <img src="assets/event${i}-thumbnail.jpg" alt="Event ${i}" class="rounded-lg mb-4 w-full h-40 object-cover" />
-        <h4 class="text-xl font-semibold text-secondary drop-shadow-glow mb-2">Event ${i}</h4>
-        <p class="text-gray-500 text-sm">Deskripsi singkat event ${i}.</p>
-      </a>
-    `).join('')}
-  </div>
-</div>
+      <div class="overflow-hidden relative"></div>
+        <div id="carousel" class="flex transition-transform duration-700 ease-in-out w-[500%]">
+          <a href="event1.html" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center">
+            <img src="assets/event1-thumbnail.jpg" alt="Event 1" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h4 class="text-xl font-semibold text-secondary drop-shadow-glow mb-2">Lomba Website UMKM</h4>
+            <p class="text-gray-300 text-sm">Deskripsi singkat event 1.</p>
+          </a>
+          <a href="event2.html" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center">
+            <img src="assets/event2-thumbnail.jpg" alt="Event 2" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h4 class="text-xl font-semibold text-secondary drop-shadow-glow mb-2">Lomba Rancang Bangun IoT</h4>
+            <p class="text-gray-300 text-sm">Deskripsi singkat event 2.</p>
+          </a>
+          <a href="event3.html" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center">
+            <img src="assets/event3-thumbnail.jpg" alt="Event 3" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h4 class="text-xl font-semibold text-secondary drop-shadow-glow mb-2">Workshop</h4>
+            <p class="text-gray-300 text-sm">Deskripsi singkat event 3.</p>
+          </a>
+          <a href="event4.html" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center">
+            <img src="assets/event4-thumbnail.jpg" alt="Event 4" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h4 class="text-xl font-semibold text-secondary drop-shadow-glow mb-2">Talkshow</h4>
+            <p class="text-gray-300 text-sm">Deskripsi singkat event 4.</p>
+          </a>
+          <a href="event5.html" class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center">
+            <img src="assets/event5-thumbnail.jpg" alt="Event 5" class="rounded-lg mb-4 w-full h-40 object-cover" />
+            <h4 class="text-xl font-semibold text-secondary drop-shadow-glow mb-2">IT Exhibition</h4>
+            <p class="text-gray-300 text-sm">Deskripsi singkat event 5.</p>
+          </a>
+        </div>
+      </div>
       <div class="flex justify-center mt-6">
         <button id="prev" class="bg-primary text-secondary px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105">Prev</button>
         <button id="next" class="bg-primary text-secondary px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 ml-4">Next</button>
+      </div>
     </div>
   </section>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let index = 0;
+    const totalCards = 5;
+
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${index * (100 / totalCards)}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      index = (index - 1 + totalCards) % totalCards;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      index = (index + 1) % totalCards;
+      updateCarousel();
+    });
+  </script>
 
   <!-- Kontak Section -->
   <section id="kontak" class="py-24 bg-neutral" data-aos="fade-up">
@@ -169,27 +210,33 @@
   <!-- AOS Init -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init({ duration: 1000, once: true });</script>
-
-  <!-- Carousel Script -->
-<script>
-  const carousel = document.getElementById('carousel');
-  let index = 0;
-  const totalCards = 5;
-
-  setInterval(() => {
-    index = (index + 1) % totalCards;
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }, 2000);
-</script>
+  
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" class="fixed bottom-4 right-4 bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 hidden">
+    ↑ 
+  </button>
   <script>
-    document.getElementById('prev').addEventListener('click', () => {
-      index = (index - 1 + totalCards) % totalCards;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    });
-
-    document.getElementById('next').addEventListener('click', () => {
-      index = (index + 1) % totalCards;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
+    const scrollToTopButton = document.getElementById('scrollToTop');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopButton.classList.remove('hidden');
+      } else {
+        scrollToTopButton.classList.add('hidden');
+      }
+    };
+    scrollToTopButton.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <!-- Smooth Scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
     });
   </script>
 </body>
